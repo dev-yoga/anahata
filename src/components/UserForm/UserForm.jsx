@@ -42,6 +42,7 @@ const UserForm = ({ buttonText, submitAction }) => {
             <label>
                 <TextField label="Password" type="password" value={password} onChange={({ target }) => setPassword(target.value)} />            
             </label>
+            <Button type="submit">{buttonText}</Button>
         </form>
     );
 };
