@@ -1,25 +1,53 @@
-import logo from '../../logo.svg';
+import React, { useState, useEffect } from 'react';
+import store from '../../store';
+import {
+  BrowserRouter,
+  Switch,
+  Route
+} from 'react-router-dom';
+import Navigation from '../Navigation/Navigation';
+
+import { MuiThemeProvider, createTheme } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import './App.css';
 
-function App() {
+
+export default function App() {
+  const [isLightMode, setIsLightMode] = useState(true);
+
+  function handleStateChange() {
+    const state = store.getState();
+    localStorage.setItem('state', JSON.stringify(state));
+  }
+
+  const theme = createTheme({
+    palette: {
+      type: isLightMode ? 'light' : 'dark',
+      primary: {
+        main: '#138D75'
+      },
+      secondary: {
+        main:'#DAF7A6'
+      }
+    },
+  });
+
+  function toggleMode() {
+    setIsLightMode(!isLightMode);
+  }
+
+  useEffect(() => {
+    store.subscribe(handleStateChange);
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MuiThemeProvider theme={theme}>
+      <CssBaseline/>
+      <BrowserRouter>
+        <Navigation toggleMode={toggleMode}/>
+        <Switch>
+        </Switch>
+      </BrowserRouter>
+    </MuiThemeProvider>
   );
 }
-
-export default App;
