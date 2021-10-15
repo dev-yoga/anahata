@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SignIn from '../../containers/SignIn/SignIn';
+import SignUp from '../../containers/SignUp/SignUp';
 import store from '../../store';
 import {
   BrowserRouter,
@@ -48,6 +49,7 @@ export default function App() {
         <Navigation toggleMode={toggleMode}/>
         <Switch>
         <Route path="/signin" component={SignIn}/>
+        <Route path="/signup" component={SignUp}/>
         </Switch>
       </BrowserRouter>
     </MuiThemeProvider>
