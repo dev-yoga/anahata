@@ -32,8 +32,8 @@ const UserForm = ({ buttonText, submitAction }) => {
 
     useEffect(() => {
         unsubscribe = store.subscribe(handleStateChange);
-    });
-
+      });
+      
     return (
         <form onSubmit={handleSubmit} className={styles.form}>
             <label>
