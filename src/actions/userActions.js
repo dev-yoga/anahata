@@ -18,3 +18,25 @@ export function signUp(username, password) {
         }
     };
 }
+
+export function signIn(username, password) {
+    return {
+      type: SIGN_IN,
+      username,
+      password,
+      // the resolveAction is the second step for updating the state with the API response (see: reducer SIGN_IN_DONE)
+      resolveAction: (username, token) => {
+        return {
+          type: SIGN_IN_DONE,
+          username,
+          token
+        };
+      }
+    };
+  }
+  
+  export function signOut() {
+    return {
+      type: SIGN_OUT
+    };
+  }
