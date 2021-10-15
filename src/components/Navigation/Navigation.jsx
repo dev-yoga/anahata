@@ -43,6 +43,7 @@ function Navigation({ toggleMode }) {
           <MenuIcon />
         </IconButton>
         <Menu anchorEl={anchorEl} keepMounted open={open} onClose={handleClose}>
+          <MenuItem onClick={() => navigate('/home')}>Home</MenuItem>
           <MenuItem onClick={() => navigate('/signup')}>Sign Up</MenuItem>
           <MenuItem onClick={() => navigate('/signin')}>Sign In</MenuItem>
           <MenuItem onClick={() => navigate('/signout')}>Sign Out</MenuItem>

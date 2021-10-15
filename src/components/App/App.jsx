@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Home from '../../containers/Home/Home';
 import SignIn from '../../containers/SignIn/SignIn';
 import SignUp from '../../containers/SignUp/SignUp';
 import SignOut from '../../containers/SignOut/SignOut'
@@ -49,6 +50,7 @@ export default function App() {
       <BrowserRouter>
         <Navigation toggleMode={toggleMode}/>
         <Switch>
+        <Route path="/home" component={Home}/>
         <Route path="/signin" component={SignIn}/>
         <Route path="/signup" component={SignUp}/>
         <Route path="/signout" component={SignOut}/>

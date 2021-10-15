@@ -1,0 +1,10 @@
+.main {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
