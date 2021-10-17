@@ -22,11 +22,11 @@ SequenceCreate
 - Delete option for selected Pose
 
 SequenceList
- - User sequence list needs to display sequences properly
+ - User sequence list needs to display sequences properly (see new backend route :)
  - delete sequence needs to exist and be an option on user sequence list or bottom of actual sequence w/ confirm
  
  SequenceActual 
- - Needs to display actual sequence
+ - Needs to display actual sequence (was specific sequence by User + sequence id--just get by sequence id for now, assume correct user for mvp)
  - Delete sequence needs to exist
 
  sequenceService
