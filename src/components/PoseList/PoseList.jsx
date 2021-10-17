@@ -17,6 +17,6 @@ export default function PoseList() {
     }, []);
 
     return (<ul>
-        {poses.map(pose => <div>{pose.name}</div>)}
+        {poses.map(pose => <div key={pose._id}>{pose.name}</div>)}
     </ul>);
 }

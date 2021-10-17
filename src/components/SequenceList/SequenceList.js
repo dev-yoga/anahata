@@ -19,9 +19,9 @@ export default function SequenceList() {
 
     return (<ul>
         {sequences.map(sequence => (
-            <div>
+            <div key={sequence._id}>
                 {sequence.sequenceName}
-                {sequence.poses.map(pose => (<div>- {pose.name} - {pose.sanskrit} - {pose.cues}</div>))}
+                {sequence.poses.map(pose => (<div key={pose._id}>- {pose.name} - {pose.sanskrit} - {pose.cues}</div>))}
             </div>
         ))}
     </ul>);
