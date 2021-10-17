@@ -16,9 +16,9 @@ SignIn
 SequenceCreate
 - Make SequenceCreate Component
 - Use PoseSelect as a Component for SequenceCreate
-- Needs option to move selected poses up/down
-- Needs to post completed sequence correctly to sequences
-- Push Button for another PoseSelect dropdown
+- Need option to move selected poses up/down
+- Need to post completed sequence
+- Button for another PoseSelect dropdown
 - Delete option for selected Pose
 
 SequenceList
@@ -31,20 +31,21 @@ SequenceList
 
  sequenceService
  - delete 
- - post ~~
+ - ~~ post ~~
  - edit 
  - get all
  - get one
 
  Styling
- - Chakra UI instead?
+ - hi
 
 Backend 
-- sequence schema: add user
-- get sequences by user so we need backend
+- sequence schema: add user to 
+- need to get sequences by user 
 
  Later <3
  - Edit sequence (put)
  - Further Customize Sequence (intro, theme, guided meditation, pranayama, etc)
+ - Chakra UI instead?
 
  
