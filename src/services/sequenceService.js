@@ -14,3 +14,4 @@ export async function postSequence(sequenceName, poseIds) {
 
     return response.data;
 }
+

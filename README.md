@@ -29,12 +29,12 @@ SequenceList
  - Needs to display actual sequence (was specific sequence by User + sequence id--just get by sequence id for now, assume correct user for mvp)
  - Delete sequence needs to exist
 
- sequenceService
+ sequenceService (by user)
  - delete 
- - ~~ post ~~
+ - post (have backend)
  - edit 
- - get all
- - get one
+ - get all (by user, have backend)
+ - get one (get sequence by id)
 
  Styling
  - hi

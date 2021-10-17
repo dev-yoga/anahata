@@ -2,6 +2,8 @@
 // import { Route } from 'react-router';
 import request from 'superagent';
 import { saveJwt } from './jwtService';
+import { saveUser } from './userIdService';
+import { EuroSymbolRounded } from '@material-ui/icons';
 // const baseUrl = process.env.FLOW_API
 // const baseUrl = 'http://localhost:1377/api'
 
@@ -19,7 +21,9 @@ export const signIn = (username, password) => request.post('http://localhost:137
         token: res.body.token
     }
     saveJwt(jwt_token.token);
+    saveUser(jwt_token.user_id);
     return(jwt_token);
+    
 })
 
 
