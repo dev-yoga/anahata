@@ -6,19 +6,35 @@ Authentication
  - jwt needs to hang out somewhere stealthy and be handed on the dl to api
  - make sure logout is working
 
-PoseList >> rename to SequenceCreate?
- - Sequence creator needs to have drop down pose selectors for creat in the sequence 
- - Needs option to move selected poses up/down
- - Needs to post correctly to sequences
+SequenceCreate
+- Make SequenceCreate Component
+- Use PoseSelect as a Component for SequenceCreate
+- Needs option to move selected poses up/down
+- Needs to post completed sequence correctly to sequences
+- Push Button for another PoseSelect dropdown
+- Delete option for selected Pose
 
 SequenceList
  - User sequence list needs to display sequences properly
- - delete sequence selector needs to exist and be an option on user sequence list or bottom of actual sequence w/ confirm
+ - delete sequence needs to exist and be an option on user sequence list or bottom of actual sequence w/ confirm
  
  SequenceActual 
  - Needs to display actual sequence in proper format
- - Delete sequence selector needs to exist
+ - Delete sequence needs to exist
 
  sequenceService
- - add delete route?
- - add post route?
+ - delete 
+ - post 
+ - edit 
+ - get all
+ - get one
+
+ Styling
+ - css
+
+ Later <3
+ - Edit sequence
+ - Further Customize Sequence (intro, theme, guided meditation, pranayama, etc)
+ - Chakra UI
+
+ 

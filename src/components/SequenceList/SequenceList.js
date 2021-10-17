@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { getSequences } from "../../services/sequenceService";
 
 
-//This needs to get sequences, display them as a list of user sequences to select
+// This needs to get sequences, display them as a list of user sequences to select
+// Sequence actual needs the sequence id from sequence list
 
 export default function SequenceList() {
     const [sequences, setSequences] = useState([]);
@@ -17,7 +18,12 @@ export default function SequenceList() {
     }, []);
 
     return (<ul>
-        {sequences.map(sequence => <div>{sequence.sequenceName}</div>)}
+        {sequences.map(sequence => (
+            <div>
+                {sequence.sequenceName}
+                {sequence.poses.map(pose => (<div>- {pose.name} - {pose.sanskrit} - {pose.cues}</div>))}
+            </div>
+        ))}
     </ul>);
 }
 
