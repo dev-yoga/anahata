@@ -3,8 +3,8 @@ import Home from '../../containers/Home/Home';
 import SignIn from '../../containers/SignIn/SignIn';
 import SignUp from '../../containers/SignUp/SignUp';
 import SignOut from '../../containers/SignOut/SignOut';
-import Sequence from '../../components/Sequence/Sequence';
-import Sequences from '../../components/Sequences/Sequences';
+import  Sequence from '../Sequence/Sequence';
+import Sequences from '../Sequences/Sequences';
 import store from '../../store';
 import {
   BrowserRouter,
@@ -15,9 +15,6 @@ import Navigation from '../Navigation/Navigation';
 import { MuiThemeProvider, createTheme } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import './App.css';
-// import { loadUser } from '../../services/userIdService';
-import { getSequenceById } from '../../services/sequenceService';
-import { getSequencesByUser } from '../../services/sequenceService';
 
 
 export default function App() {
@@ -58,10 +55,8 @@ export default function App() {
         <Route path="/signin" component={SignIn}/>
         <Route path="/signup" component={SignUp}/>
         <Route path="/signout" component={SignOut}/>
-        <Route exact path='/sequence' component={Sequence}/>
-        <Route exact path='/sequences' component={Sequences}/>
-        {/* <Route path='/create' component={Create}/> */}
-        {/* <Route path='/sequence' element={<Sequence authed={true}/>}/> */}
+        <Route path='/sequence/:sequenceId' component={Sequence}/>
+        <Route path='/sequences' component={Sequences}/>
         </Switch>
       </BrowserRouter>
     </MuiThemeProvider>
