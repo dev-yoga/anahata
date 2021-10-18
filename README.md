@@ -10,8 +10,7 @@ Authentication
  - make sure logout is working
 
 SignIn
-- Save user id to session storage for use when creating sequences
-- or use redux 
+- ~~Save user id to session storage for use when creating sequences~~
 
 SequenceCreate
 - Make SequenceCreate Component
@@ -22,7 +21,7 @@ SequenceCreate
 - Delete option for selected Pose
 
 SequenceList
- - User sequence list needs to display sequences properly (see new backend route :)
+ - User sequence list needs to display sequences by user (see new backend route :)
  - delete sequence needs to exist and be an option on user sequence list or bottom of actual sequence w/ confirm
  
  SequenceActual 
