@@ -1,9 +1,7 @@
 ##### Read Me
 
-###### To do
+# To do
 
-Error: Each child in a list should have a unique "key" prop.
-- ~~add a key attribute to div~~
 
 Authentication
  - ~~jwt needs to hang out somewhere stealthy and be handed on the dl to api~~
@@ -21,12 +19,11 @@ SequenceCreate
 - Delete option for selected Pose
 
 Sequences
- - User sequence list needs to display sequences by user (see new backend route :)
- - Delete sequence needs to exist and be an option on user sequence list or bottom of actual sequence w/ confirm
+ - ~~User sequence list needs to display sequences by user (see new backend route :)~~
  
  Sequence
- - Needs to display actual sequence (was specific sequence by User + sequence id--just get by sequence id for now, assume correct user for mvp)
- - Delete sequence needs to exist
+ - ~~Needs to display actual sequence (was specific sequence by User + sequence id--just get by sequence id for now, assume correct user for mvp)~~
+ - Delete sequence needs to exist w/ confirm
 
 
  sequenceService (by user)
@@ -45,7 +42,8 @@ Backend
 
  Later <3
  - Edit sequence (put)
+ - Duplicate Sequence ?
  - Further Customize Sequence (intro, theme, guided meditation, pranayama, etc)
- - Chakra UI instead?
+ - Chakra UI instead ?
 
  
