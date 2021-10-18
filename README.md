@@ -39,8 +39,8 @@ SequenceList
  - hi
 
 Backend 
-- sequence schema: add user to 
-- need to get sequences by user 
+- ~~ sequence schema: add user to ~~
+- ~~ need to get sequences by user ~~
 
  Later <3
  - Edit sequence (put)
