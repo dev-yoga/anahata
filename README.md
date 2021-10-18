@@ -32,7 +32,7 @@ SequenceList
  - delete 
  - post (have backend)
  - edit 
- - get all (by user, have backend)
+ - ~~get all (by user, have backend)~~
  - get one (get sequence by id)
 
  Styling
