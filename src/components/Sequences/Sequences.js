@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import { getSequences } from "../../services/sequenceService";
-
+import { getSequencesByUser } from "../../services/sequenceService";
 
 // This needs to get sequences, display them as a list of user sequences to select
-// Sequence actual needs the sequence id from sequence list
 
-export default function SequenceList() {
+export default function Sequences() {
     const [sequences, setSequences] = useState([]);
 
     useEffect(() => {
         const getSequencesFromApi = async () => {
-            const getSequencesResponse = await getSequences();
+            const getSequencesResponse = await getSequencesByUser();
             setSequences(await getSequencesResponse);
         };
 

@@ -20,13 +20,14 @@ SequenceCreate
 - Button for another PoseSelect dropdown
 - Delete option for selected Pose
 
-SequenceList
+Sequences
  - User sequence list needs to display sequences by user (see new backend route :)
  - Delete sequence needs to exist and be an option on user sequence list or bottom of actual sequence w/ confirm
  
- SequenceActual 
+ Sequence
  - Needs to display actual sequence (was specific sequence by User + sequence id--just get by sequence id for now, assume correct user for mvp)
  - Delete sequence needs to exist
+
 
  sequenceService (by user)
  - ~~delete~~

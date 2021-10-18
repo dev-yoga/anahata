@@ -2,8 +2,8 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import store from '../../store';
 import PoseList from '../../components/PoseList/PoseList';
-import SequenceList from '../../components/SequenceList/SequenceList';
-// import SequenceActual from '../../components/SequenceActual';
+import Sequences from '../../components/Sequences/Sequences';
+import Sequence from '../../components/Sequence/Sequence';
 import styles from './Home.css';
 
 
@@ -20,9 +20,9 @@ export default function Home() {
   return (
     <>
       <div className={styles.main}>
-        <SequenceList />
+        <Sequences />
         <PoseList />
-        {/* <SequenceActual /> */}
+        <Sequence />
       </div>
     </>
   );

@@ -19,10 +19,11 @@ export async function postSequence(sequenceName, poseIds) {
 export async function getSequencesByUser() {
     const response = await axios.get(`http://localhost:1377/api/sequence/user/${loadUser()}`, 
     { headers: {"Authorization" : `Bearer ${loadJwt()}`}});
+    console.log(loadUser());
     return response.data;
 }
 
-export async function getSequenceByUser(sequenceId) {
+export async function getSequenceById(sequenceId) {
     const response = await axios.get(`http://localhost:1377/api/sequence/${sequenceId}`,
     { headers: {"Authorization" : `Bearer ${loadJwt()}`}});
     return response.data;
@@ -44,3 +45,6 @@ export async function editSequence(sequenceName, poseIds, sequenceId) {
 
     return response.data;
 }
+
+// A route that passes a sequenceId to display a single sequence
+
