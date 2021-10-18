@@ -27,3 +27,9 @@ export async function getSequenceByUser(sequenceId) {
     { headers: {"Authorization" : `Bearer ${loadJwt()}`}});
     return response.data;
 }
+
+// once I have other users secure so users can only delet their own sequences obvs
+export async function deleteSequenceById(sequenceId) {
+    await axios.delete(`http://localhost:1377/api/sequence/${sequenceId}`,
+    { headers: {"Authorization" : `Bearer ${loadJwt()}`}});
+}
