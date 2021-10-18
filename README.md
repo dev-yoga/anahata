@@ -22,7 +22,7 @@ SequenceCreate
 
 SequenceList
  - User sequence list needs to display sequences by user (see new backend route :)
- - delete sequence needs to exist and be an option on user sequence list or bottom of actual sequence w/ confirm
+ - Delete sequence needs to exist and be an option on user sequence list or bottom of actual sequence w/ confirm
  
  SequenceActual 
  - Needs to display actual sequence (was specific sequence by User + sequence id--just get by sequence id for now, assume correct user for mvp)
@@ -39,8 +39,8 @@ SequenceList
  - hi
 
 Backend 
-- ~~ sequence schema: add user to ~~
-- ~~ need to get sequences by user ~~
+- ~~sequence schema: add user to~~
+- ~~need to get sequences by user~~
 
  Later <3
  - Edit sequence (put)
