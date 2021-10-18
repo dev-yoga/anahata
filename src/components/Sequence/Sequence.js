@@ -6,8 +6,8 @@ import { getSequenceById } from "../../services/sequenceService";
 //This needs to display one entire sequence of poses with their pose name, sanksrit name, and cues.
 
 export default function Sequence() {
-    const [sequence, setSequence] = useState({});
-    const {sequenceId} = useParams();
+    const [sequence, setSequence] = useState({poses:[]});
+    const { sequenceId } = useParams();
 
     useEffect(() => {
         const getSequenceFromApi = async () => {
@@ -19,7 +19,9 @@ export default function Sequence() {
     }, [sequenceId]);
 
     return (
-    <div>
-        {sequence.sequenceName}
-    </div>);
+        <div>
+            {sequence.sequenceName}
+            {sequence.poses.map(pose => (<div key={pose._id}>- {pose.name} - {pose.sanskrit} - {pose.cues}</div>))}
+        </div>
+    )
 }
