@@ -21,3 +21,9 @@ export async function getSequencesByUser() {
     { headers: {"Authorization" : `Bearer ${loadJwt()}`}});
     return response.data;
 }
+
+export async function getSequenceByUser(sequenceId) {
+    const response = await axios.get(`http://localhost:1377/api/sequence/${sequenceId}`,
+    { headers: {"Authorization" : `Bearer ${loadJwt()}`}});
+    return response.data;
+}

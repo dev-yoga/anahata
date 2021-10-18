@@ -30,10 +30,10 @@ SequenceList
 
  sequenceService (by user)
  - delete 
- - post (have backend)
+ - post (already have backend for this because sequence takes user)
  - edit 
  - ~~get all (by user, have backend)~~
- - get one (get sequence by id)
+ - ~~get one (get sequence by id)~~
 
  Styling
  - hi
