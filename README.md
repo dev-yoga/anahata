@@ -29,9 +29,9 @@ SequenceList
  - Delete sequence needs to exist
 
  sequenceService (by user)
- - delete 
- - post (already have backend for this because sequence takes user)
- - edit 
+ - ~~delete~~
+ - ~~post (already have backend for this because sequence takes user)~~
+ - ~~edit~~
  - ~~get all (by user, have backend)~~
  - ~~get one (get sequence by id)~~
 
