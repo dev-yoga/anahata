@@ -34,7 +34,13 @@ Sequences
  - ~~get one (get sequence by id)~~
 
  Styling
- - hi
+ - Home
+ - Sign In
+ - Sign Up
+ - Sign Out
+ - Sequence
+ - Sequences
+ - SequenceCreate
 
 Backend 
 - ~~sequence schema: add user to~~

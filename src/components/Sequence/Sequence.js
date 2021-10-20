@@ -20,8 +20,14 @@ export default function Sequence() {
 
     return (
         <div>
-            {sequence.sequenceName}
-            {sequence.poses.map(pose => (<div key={pose._id}>- {pose.name} - {pose.sanskrit} - {pose.cues}</div>))}
+            <p id="sequenceName">{sequence.sequenceName}</p>
+            <p class="poses">{sequence.poses.map(pose => (
+            <div key={pose._id}>
+                 {pose.name} 
+                 {pose.sanskrit}
+                 {pose.cues}
+                 </div>))}
+            </p>
         </div>
     )
 }

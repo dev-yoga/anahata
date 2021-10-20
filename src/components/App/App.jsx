@@ -29,10 +29,10 @@ export default function App() {
     palette: {
       type: isLightMode ? 'light' : 'dark',
       primary: {
-        main: '#138D75'
+        main: '#666666'
       },
       secondary: {
-        main:'#DAF7A6'
+        main:'#000000'
       }
     },
   });
@@ -47,9 +47,9 @@ export default function App() {
 
   return (
     <MuiThemeProvider theme={theme}>
-      <CssBaseline/>
-      <BrowserRouter>
         <Navigation toggleMode={toggleMode}/>
+      <BrowserRouter>
+        <Navigation />
         <Switch>
         <Route path="/home" component={Home}/>
         <Route path="/signin" component={SignIn}/>
@@ -59,6 +59,6 @@ export default function App() {
         <Route path='/sequences' component={Sequences}/>
         </Switch>
       </BrowserRouter>
-    </MuiThemeProvider>
+     </MuiThemeProvider>
   );
 }
