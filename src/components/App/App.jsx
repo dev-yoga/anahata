@@ -3,8 +3,9 @@ import Home from '../../containers/Home/Home';
 import SignIn from '../../containers/SignIn/SignIn';
 import SignUp from '../../containers/SignUp/SignUp';
 import SignOut from '../../containers/SignOut/SignOut';
-import  Sequence from '../Sequence/Sequence';
+import Sequence from '../Sequence/Sequence';
 import Sequences from '../Sequences/Sequences';
+import PoseSelect from '../PoseSelect/PoseSelect';
 import store from '../../store';
 import {
   BrowserRouter,
@@ -57,6 +58,7 @@ export default function App() {
         <Route path="/signout" component={SignOut}/>
         <Route path='/sequence/:sequenceId' component={Sequence}/>
         <Route path='/sequences' component={Sequences}/>
+        <Route path='/sequencecreate' component={PoseSelect}/>
         </Switch>
       </BrowserRouter>
      </MuiThemeProvider>
