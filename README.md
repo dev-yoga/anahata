@@ -11,7 +11,7 @@ SignIn
 - ~~Save user id to session storage for use when creating sequences~~
 
 SequenceCreate
-- Make SequenceCreate Component
+- ~~Make PoseSelect Component~~
 - Use PoseSelect as a Component for SequenceCreate
 - Need option to move selected poses up/down
 - Need to post completed sequence
